@@ -340,7 +340,7 @@ def get_course_recommendations2(silabuses,request):
     if request.user.is_authenticated:
         curent_user = request.user
     all_feedbacks = Feedback.objects.filter(user=curent_user)
-    # feedbacks = ""
+    feedbacks = ""
     temp_feedbacks = ""
     if len(all_feedbacks)>0:
         for i in all_feedbacks:
